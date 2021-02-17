@@ -14,6 +14,7 @@ export const LandingPage = () => {
     const [selectAll, setSelectAll] = React.useState(false);
 
     const handleRowClick = (index: string) => {
+        setSelectAll(false);
         const previousNumbers = [...selected];
 
         if (selected?.includes(index)) {
