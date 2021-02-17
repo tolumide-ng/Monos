@@ -1,11 +1,17 @@
 import { Action } from "redux";
 import { ThunkAction } from "redux-thunk";
 import { RootStateDef } from ".";
-import { ForAxiosDefs } from "../../commonTypes";
+import { ForAxiosDefs, UserDef } from "../../commonTypes";
 
 export interface RootState {
     dropDownReducer: {
         display: boolean;
+    };
+
+    fetchUsersReducer: {
+        error: string | null;
+        status: string;
+        users: Array<UserDef>;
     };
 }
 
