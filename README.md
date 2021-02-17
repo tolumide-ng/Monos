@@ -11,5 +11,5 @@
 BASE_URL="http://tolumide.users.challenge.dev.monospacelabs.com/"
 ```
 
--   Run `npm init` to install all dependencies
+-   Run `npm install` to install all dependencies
 -   Run `npm run dev` to start the application locally
