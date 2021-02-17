@@ -1,0 +1,28 @@
+.check {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.check .check-mark {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    border: 1px solid var(--color-alto);
+    background: var(--color-alto) url("../../../../assets/check.svg")
+        center/3000% no-repeat;
+    transform: background-size 0.1s ease;
+}
+
+.check input:checked + .check-mark {
+    background-size: 60%;
+    background-color: var(--color-chambray);
+    border: 1px solid var(--color-chambray);
+    transform: background-size 0.25s ease-in;
+}
+
+.check-input {
+    display: none;
+}
+
+

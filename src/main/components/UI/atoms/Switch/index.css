@@ -1,0 +1,41 @@
+.switchbutton-switch {
+    width: 24px;
+    height: 14px;
+    border-radius: 6.5px;
+    position: relative;
+    cursor: pointer;
+    /* transition: all 0.3s ease; */
+    outline: none;
+}
+
+.switchbutton-ball {
+    /* height: 0.375rem;
+    width: 0.375rem; */
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(---color-white);
+}
+
+.switchbutton-switch--active {
+    background-color: var(--color-tradewind);
+    border-color: var(--color-tradewind);
+}
+
+.switchbutton-switch--inactive {
+    background-color: var(--color-dusty-gray);
+    border-color: var(--color-dusty-gray);
+}
+
+.switchbutton-ball--inactive {
+    left: 2px;
+    border: 1px solid var(--color-dusty-gray);
+}
+
+.switchbutton-ball--active {
+    right: 2px;
+    border: 1px solid var(--color-white);
+}

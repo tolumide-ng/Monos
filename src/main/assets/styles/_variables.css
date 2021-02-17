@@ -1,5 +1,10 @@
 :root {
     --app-default-color: green;
+    --color-alto: #dadada;
+    --color-chambray: #39628d;
+    --color-dusty-gray: #979797;
+    --color-tradewind: #6ab8b8;
+    ---color-white: #ffffff;
 }
 
 @media screen and (max-width: 1024px) {
