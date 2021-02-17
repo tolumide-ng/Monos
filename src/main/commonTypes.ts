@@ -18,3 +18,12 @@ export type ForAxiosDefs =
     | "unlink"
     | "UNLINK"
     | undefined;
+
+export interface UserDef {
+    active: boolean;
+    name: string;
+    email: string;
+    phone: string;
+    type: string;
+    id: string;
+}

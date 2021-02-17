@@ -1,3 +1,116 @@
 .ldpg {
-    background-color: green;
+    --table-width: calc(max(1500px, 95vw));
+    --table-width: calc(min(95vw, 1500px));
+    min-height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.ldpg-description {
+    height: 32px;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 32px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ldpg-avatar {
+    height: 32px;
+    width: 32px;
+}
+
+.ldpg-avatar {
+    cursor: pointer;
+}
+
+.ldpg-left,
+.ldpg-right {
+    display: flex;
+    align-items: center;
+}
+
+.ldpg-selected {
+    color: var(--color-gray);
+    margin-right: 24px;
+    font-size: 12px;
+}
+
+.ldpg-title {
+    color: var(--color-black);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+.ldpg-th {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.ldpg-th,
+.ldpg-td {
+    height: 54px;
+}
+
+.ldpg-thead {
+    border-top: 2px solid var(--color-mecury);
+}
+
+.ldpg-th:nth-child(1),
+.ldpg-td:nth-child(1) {
+    width: calc(min(56px, 3.2520325203%));
+    /* width: 3.2520325203%; */
+    text-align: center;
+    width: 56px;
+}
+
+.ldpg-th:nth-child(2),
+.ldpg-td:nth-child(2) {
+    width: calc(min(197px, 11.4401858304%));
+    text-align: left;
+}
+
+.ldpg-th:nth-child(3),
+.ldpg-td:nth-child(3) {
+    width: calc(min(299px, 17.3635307782%));
+    text-align: left;
+}
+
+.ldpg-th:nth-child(4),
+.ldpg-td:nth-child(4) {
+    width: calc(min(395px, 22.9384436702%));
+    text-align: left;
+}
+
+.ldpg-th:nth-child(5),
+.ldpg-td:nth-child(5) {
+    width: calc(min(678px, 39.3728222997%));
+    text-align: left;
+}
+
+.ldpg-th:nth-child(6),
+.ldpg-td:nth-child(6) {
+    width: calc(min(48px, 2.787456446%));
+    /* width: 48px; */
+    text-align: right;
+    /* padding-right: 32px; */
+}
+
+table,
+.ldpg-tablecont {
+    width: var(--table-width);
+    color: var(--color-chambray);
+}
+
+thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
 }
