@@ -6,17 +6,22 @@ import "./index.css";
 
 interface TabelRowDef {
     row: UserDef;
+    selected: Array<string>;
+    handleRowClick: (index: string) => void;
 }
 
 export const TableRow = (props: TabelRowDef) => {
-    const handleRowClick = (e: React.TouchEvent | React.MouseEvent) => {
-        // if()
+    const handleClick = () => {
+        props.handleRowClick(props.row.id);
     };
-
     return (
-        <tr className="ldpg-trbody tbrow" onClick={handleRowClick}>
+        <tr className="ldpg-trbody tbrow" onClick={handleClick}>
             <td className="ldpg-td">
-                <CheckBox state={false} />
+                <CheckBox
+                    handleClick={handleClick}
+                    rowId={props.row.id}
+                    selected={props.selected}
+                />
             </td>
             <td className="ldpg-td">CO</td>
             <td className="ldpg-td">{props.row.name}</td>
