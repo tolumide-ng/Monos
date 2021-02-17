@@ -107,6 +107,9 @@ table,
     width: var(--table-width);
     color: var(--color-chambray);
 }
+table {
+    border-bottom: 1px solid var(--color-mecury);
+}
 
 thead,
 tbody tr {

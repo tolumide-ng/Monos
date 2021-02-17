@@ -62,6 +62,7 @@ export const LandingPage = () => {
             setUsers(allUsersSelector.users);
         }
     }, [allUsersSelector.status]);
+
     return (
         <article className="ldpg">
             <article className="ldpg-cont">
@@ -119,7 +120,7 @@ export const LandingPage = () => {
                                       selected={selected}
                                   />
                               ))
-                            : ""}
+                            : null}
                     </tbody>
                 </table>
             </article>

@@ -9,6 +9,10 @@
     cursor: pointer;
 }
 
+.ldpg-trbody:hover .ldpg-td:nth-child(3) {
+    font-weight: 500;
+}
+
 .tbrow-role {
     text-transform: uppercase;
     font-weight: 700;
