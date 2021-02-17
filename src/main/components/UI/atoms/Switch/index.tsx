@@ -3,11 +3,13 @@ import "./index.css";
 
 interface SwitchButtonDef {
     buttonState: boolean;
+    handleActiveState: () => void;
 }
 
 export const SwitchButton = (props: SwitchButtonDef) => {
-    const [buttonState, setButtonState] = React.useState(false);
+    const [buttonState, setButtonState] = React.useState(props.buttonState);
     const handlClick = (e: React.TouchEvent | React.MouseEvent) => {
+        props.handleActiveState();
         setButtonState(!buttonState);
     };
     return (

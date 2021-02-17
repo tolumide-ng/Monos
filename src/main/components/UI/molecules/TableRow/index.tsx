@@ -1,5 +1,8 @@
 import * as React from "react";
+import { useDispatch } from "react-redux";
 import { UserDef } from "../../../../commonTypes";
+import { fetchUpdateUserAction } from "../../../../store/modules/specificUser/actions";
+import { useActionCall } from "../../../../utilities/hooks/useActionCall";
 import { CheckBox } from "../../atoms/CheckBox";
 import { SwitchButton } from "../../atoms/Switch";
 import "./index.css";
@@ -14,6 +17,19 @@ export const TableRow = (props: TabelRowDef) => {
     const handleClick = () => {
         props.handleRowClick(props.row.id);
     };
+
+    const dispatch = useDispatch();
+
+    const handleActiveState = () => {
+        useActionCall({
+            dispatch,
+            requestFunc: fetchUpdateUserAction,
+            method: "PUT",
+            payload: {},
+            path: `users/${props.row.id}`,
+        });
+    };
+
     return (
         <tr className="ldpg-trbody tbrow">
             <td className="ldpg-td" onClick={handleClick}>
@@ -28,7 +44,10 @@ export const TableRow = (props: TabelRowDef) => {
             <td className="ldpg-td">{props.row.email}</td>
             <td className="ldpg-td">{props.row.phone}</td>
             <td className="ldpg-td">
-                <SwitchButton buttonState={true} />
+                <SwitchButton
+                    buttonState={props.row.active}
+                    handleActiveState={handleActiveState}
+                />
             </td>
         </tr>
     );
