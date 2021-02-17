@@ -1,5 +1,5 @@
 .tbrow {
-    border-top: 2px solid var(--color-mecury);
+    border-top: 1px solid var(--color-mecury);
     font-size: 14px;
     line-height: 18px;
 }

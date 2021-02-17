@@ -59,7 +59,7 @@
 }
 
 .ldpg-thead {
-    border-top: 2px solid var(--color-mecury);
+    border-top: 1px solid var(--color-mecury);
 }
 
 .ldpg-th:nth-child(1),
