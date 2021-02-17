@@ -15,8 +15,8 @@ export const TableRow = (props: TabelRowDef) => {
         props.handleRowClick(props.row.id);
     };
     return (
-        <tr className="ldpg-trbody tbrow" onClick={handleClick}>
-            <td className="ldpg-td">
+        <tr className="ldpg-trbody tbrow">
+            <td className="ldpg-td" onClick={handleClick}>
                 <CheckBox
                     handleClick={handleClick}
                     rowId={props.row.id}
