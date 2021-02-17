@@ -99,7 +99,7 @@
     width: calc(min(48px, 2.787456446%));
     /* width: 48px; */
     text-align: right;
-    /* padding-right: 32px; */
+    padding-right: 32px;
 }
 
 table,
