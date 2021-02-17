@@ -28,15 +28,12 @@ export const LandingPage = () => {
     };
 
     const handleSelectAll = () => {
-        console.log("within here");
         const allIds: Array<string> = [];
 
         if (!selectAll) {
             users?.forEach((user) => {
                 allIds.push(user.id);
             });
-
-            console.log("HERE NOW", allIds);
         }
         setSelectAll(!selectAll);
         setSelected(allIds);
