@@ -1,0 +1,10 @@
+.tbrow {
+    border-top: 2px solid var(--color-mecury);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.tbrow:hover {
+    background-color: var(--color-chambray-5);
+    cursor: pointer;
+}

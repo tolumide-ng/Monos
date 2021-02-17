@@ -17,7 +17,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: var(---color-white);
+    background-color: var(--color-white);
 }
 
 .switchbutton-switch--active {
