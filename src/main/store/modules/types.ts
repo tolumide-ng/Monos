@@ -13,6 +13,11 @@ export interface RootState {
         status: string;
         users: Array<UserDef>;
     };
+    fetchUpdateUserReducer: {
+        error: string | null;
+        status: string;
+        user: Object;
+    };
 }
 
 export interface StoreActionPropsDefs {

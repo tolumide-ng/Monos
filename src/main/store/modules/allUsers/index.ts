@@ -6,4 +6,4 @@ export const users: FetchUsersStateDef = {
     users: [],
 };
 
-export default FetchUsersStateDef;
+export default users;
