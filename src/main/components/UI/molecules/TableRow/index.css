@@ -8,3 +8,27 @@
     background-color: var(--color-chambray-5);
     cursor: pointer;
 }
+
+.tbrow-role {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.tbrow-role--card {
+    height: 24px;
+    width: 34px;
+    background-color: var(--color-jagged-ice);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tbrow-role--card:nth-child(even) {
+    background-color: var(--color-sandy-borwn);
+}
+
+/* --color-jagged-ice */
+
+.tbrow-role--card:nth-child(even) {
+    background-color: var(--color-jagged-ice);
+}

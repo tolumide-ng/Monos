@@ -10,6 +10,8 @@
     --color-athens-gray: #f8f9fb;
     --color-black: #000;
     --color-gray: #808080;
+    --color-sandy-borwn: #f2ac57;
+    --color-jagged-ice: #b9e5e5;
 }
 
 @media screen and (max-width: 1024px) {

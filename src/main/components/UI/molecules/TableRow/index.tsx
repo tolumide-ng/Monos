@@ -2,6 +2,7 @@ import * as React from "react";
 import { useDispatch } from "react-redux";
 import { UserDef } from "../../../../commonTypes";
 import { fetchUpdateUserAction } from "../../../../store/modules/specificUser/actions";
+import { getInitials } from "../../../../utilities/helpers/getInitials";
 import { useActionCall } from "../../../../utilities/hooks/useActionCall";
 import { CheckBox } from "../../atoms/CheckBox";
 import { SwitchButton } from "../../atoms/Switch";
@@ -39,7 +40,11 @@ export const TableRow = (props: TabelRowDef) => {
                     selected={props.selected}
                 />
             </td>
-            <td className="ldpg-td">CO</td>
+            <td className="ldpg-td tbrow-role">
+                <div className="tbrow-role--card">
+                    {getInitials(props.row.type)}
+                </div>
+            </td>
             <td className="ldpg-td">{props.row.name}</td>
             <td className="ldpg-td">{props.row.email}</td>
             <td className="ldpg-td">{props.row.phone}</td>
